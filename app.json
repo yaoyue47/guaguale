@@ -11,5 +11,15 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页"
+    },{
+      "pagePath": "pages/about/about",
+      "text": "关于"
+    }
+    ]
+  }
 }
