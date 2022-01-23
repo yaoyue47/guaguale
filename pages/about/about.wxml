@@ -1,2 +1,4 @@
 <!--pages/about/about.wxml-->
 <text>pages/about/about.wxml</text>
+<mp-icon type="field" icon="me" color="black" size="{{25}}"></mp-icon>
+<mp-icon icon="home" color="black" size="{{25}}"></mp-icon>
