@@ -1,23 +1,24 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<mp-form-page title="成绩查询系统" subtitle="请输入你的姓名和准考证号">
+    <mp-cells title="填写">
+        <mp-cell title="考生姓名">
+            <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入你的姓名" />
+        </mp-cell>
+        <mp-cell title="准考证号">
+            <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入你的准考证号" />
+        </mp-cell>
+    </mp-cells>
+    <mp-cells title="选择">
+        <mp-cell>
+            <view slot="title">考试类型</view>
+            <picker range="{{array}}" value="{{index}}" bindchange="bindPickerChange">
+                <view>{{array[index]}}</view>
+            </picker>
+        </mp-cell>
+    </mp-cells>
+    <view slot="button">
+        <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+        <button class="weui-btn" type="default" bindtap="submitForm">重置</button>
+    </view>
+    <view slot="footer">wdad</view>
+</mp-form-page>
