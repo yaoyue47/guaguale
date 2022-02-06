@@ -30,7 +30,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "useIsolateContext": true,
+    "useIsolateContext": false,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
@@ -42,8 +42,8 @@
     "ignoreUploadUnusedFiles": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.21.3",
-  "appid": "wx150ba2d24aac4395",
+  "libVersion": "2.22.0",
+  "appid": "wxb6894be989cf396a",
   "projectname": "%E5%88%AE%E5%88%AE%E4%B9%90",
   "debugOptions": {
     "hidedInDevtools": []

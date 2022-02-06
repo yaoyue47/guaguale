@@ -1,1 +1,6 @@
 /* pages/about/about.wxss */
+.text{
+  font-size:large;
+  text-indent: 2rem;
+  margin-top: 2rem;
+}
