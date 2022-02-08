@@ -1,4 +1,6 @@
 // pages/search/search.js
+
+import Scratch from '../../utils/scratch.js'
 Page({
 
   /**
@@ -12,7 +14,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    new Scratch(this, {
+      canvasId: 'canvas-demo'
+    })
   },
 
   /**
