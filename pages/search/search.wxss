@@ -1,1 +1,16 @@
 /* pages/search/search.wxss */
+.flex-wrp{
+  margin-top: 20rpx;
+  display:flex;
+  flex-direction: row;
+}
+.flex-item{
+  border: black solid;
+  font-size: 100rpx;
+}
+.flex-item-grade{
+  flex-grow:1;
+  border: red solid;
+  font-size: 100rpx;
+  text-align: center;
+}

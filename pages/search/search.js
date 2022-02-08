@@ -1,5 +1,4 @@
 // pages/search/search.js
-
 import Scratch from '../../utils/scratch.js'
 Page({
 

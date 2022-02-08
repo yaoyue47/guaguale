@@ -1,8 +1,7 @@
 <!--pages/search/search.wxml-->
 <text>pages/search/search.wxml</text>
 <view>
-  <image src='/img/成绩查询.png'></image>
-  <canvas style='width: 350px;height: 350px;' 
+  <canvas style='width: 600rpx;height: 350px;' 
           canvas-id='canvas-demo' 
           bindtouchstart="touchStart" 
           bindtouchmove="touchMove" 
