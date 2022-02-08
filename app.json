@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,17 +14,19 @@
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "主页",
-      "iconPath": "/img/home.png",
-      "selectedIconPath": "/img/home_fill.png"
-    },{
-      "pagePath": "pages/about/about",
-      "text": "关于",
-      "iconPath": "/img/people.png",
-      "selectedIconPath": "/img/people_fill.png"
-    }
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/img/home.png",
+        "selectedIconPath": "/img/home_fill.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "/img/people.png",
+        "selectedIconPath": "/img/people_fill.png"
+      }
     ]
   },
   "useExtendedLib": {

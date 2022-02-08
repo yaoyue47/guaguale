@@ -1,21 +1,11 @@
-// pages/about/about.js
+// pages/search/search.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    array: ['考研', '四六级'],
-    index: 0
-  },
-  bindPickerChange: function (e) {
-    this.setData({
-      index: e.detail.value
-    })
-  },
-  bindSure: function (e) {
-    wx.navigateTo({
-      url: '../search/search',
-    })
-  },
-  bindReset: function (e) {
-    console.log(e)
+
   },
 
   /**

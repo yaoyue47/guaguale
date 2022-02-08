@@ -17,8 +17,8 @@
         </mp-cell>
     </mp-cells>
     <view slot="button">
-        <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
-        <button class="weui-btn" type="default" bindtap="submitForm">重置</button>
+        <button class="weui-btn" type="primary" bindtap="bindSure">确定</button>
+        <button class="weui-btn" type="default" bindtap="bindReset">重置</button>
     </view>
     <view slot="footer">wdad</view>
 </mp-form-page>
