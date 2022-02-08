@@ -1,9 +1,14 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="flex-wrp">
+  <view class="flex-item">政治 :</view>
+  <view class="flex-item-grade">0</view>
+  <view class="flex-item-grade">9</view>
+  <view class="flex-item-grade">9</view>
+</view>
+<view class="flex-wrp">
+  <view class="flex-item">政治 :</view>
+  <view class="flex-item-grade">95</view>
+</view>
 <view>
-  <canvas style='width: 600rpx;height: 350px;' 
-          canvas-id='canvas-demo' 
-          bindtouchstart="touchStart" 
-          bindtouchmove="touchMove" 
-          bindtouchend="touchEnd"></canvas>
+  <canvas style='width: 600rpx;height: 350px;' canvas-id='canvas-demo' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
 </view>
