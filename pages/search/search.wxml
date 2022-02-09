@@ -1,13 +1,42 @@
 <!--pages/search/search.wxml-->
-<view class="flex-wrp">
-  <view class="flex-item">政治 :</view>
-  <view class="flex-item-grade">0</view>
-  <view class="flex-item-grade">9</view>
-  <view class="flex-item-grade">9</view>
-</view>
-<view class="flex-wrp">
-  <view class="flex-item">政治 :</view>
-  <view class="flex-item-grade">95</view>
+<view style="background-color: #f2f2f2;padding-top: 20rpx;">
+
+  <view style="margin: 40rpx;font-size: x-large;">
+    考生某某：
+  </view>
+  <view style="margin: 40rpx;margin-bottom: 40rpx;">
+    您本次考试成绩为
+  </view>
+  <view class="flex-wrp">
+    <view class="flex-item">政治 :</view>
+    <view class="flex-item-grade">0</view>
+    <view class="flex-item-grade">9</view>
+    <view class="flex-item-grade">9</view>
+  </view>
+  <view class="flex-wrp">
+    <view class="flex-item">英语 :</view>
+    <view class="flex-item-grade">0</view>
+    <view class="flex-item-grade">9</view>
+    <view class="flex-item-grade">9</view>
+  </view>
+  <view class="flex-wrp">
+    <view class="flex-item">专一 :</view>
+    <view class="flex-item-grade">0</view>
+    <view class="flex-item-grade">9</view>
+    <view class="flex-item-grade">9</view>
+  </view>
+  <view class="flex-wrp">
+    <view class="flex-item">专二 :</view>
+    <view class="flex-item-grade">0</view>
+    <view class="flex-item-grade">9</view>
+    <view class="flex-item-grade">9</view>
+  </view>
+  <view class="flex-wrp">
+    <view class="flex-item">总分 :</view>
+    <view class="flex-item-grade">7</view>
+    <view class="flex-item-grade">9</view>
+    <view class="flex-item-grade">9</view>
+  </view>
 </view>
 <view>
   <canvas style='width: 600rpx;height: 350px;' canvas-id='canvas-demo' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
