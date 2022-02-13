@@ -39,5 +39,7 @@
   </view>
 </view>
 <view>
-  <canvas style='width: 600rpx;height: 350px;' canvas-id='canvas-demo' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
+  <canvas type="2d" disable-scroll="true" id='coverCanvas' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+    <view>wdq</view>
+  </canvas>
 </view>

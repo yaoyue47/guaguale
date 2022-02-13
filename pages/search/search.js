@@ -14,7 +14,14 @@ Page({
    */
   onLoad: function (options) {
     new Scratch(this, {
-      canvasId: 'canvas-demo'
+      canvasId: '#coverCanvas',
+      width: 600,
+      height: 300,
+      maskColor:"#dddddd",  //封面颜色
+      //bgImg: "./cover.jpg",  //封面图片
+      overCallBack: () => {
+        console.log('完成刮刮乐')
+      },
     })
   },
 
