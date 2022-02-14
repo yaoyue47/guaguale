@@ -6,14 +6,16 @@
   display:flex;
   flex-direction: row;
   background-color: white;
+  border: 1px solid green;
 }
 .flex-item{
   font-size: 100rpx;
+  border: 1px solid red;
 }
 .flex-item-grade{
   flex-grow:1;
   font-size: 100rpx;
   font-weight: bold;
   text-align: center;
-  transform:scale(1.5)
+  transform:scale(1.5);
 }

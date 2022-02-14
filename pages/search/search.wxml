@@ -8,7 +8,9 @@
     您本次考试成绩为
   </view>
   <view class="flex-wrp">
-    <view class="flex-item">政治 :</view>
+    <canvas type="2d" disable-scroll="true" id='coverCanvas' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" style="right: 40rpx; position: absolute; z-index: 999;border: solid 1px blue;width: {{width}}rpx;height: {{height}}rpx;">
+</canvas>
+    <view class="flex-item" id="id">政治 :</view>
     <view class="flex-item-grade">0</view>
     <view class="flex-item-grade">9</view>
     <view class="flex-item-grade">9</view>
@@ -37,9 +39,4 @@
     <view class="flex-item-grade">9</view>
     <view class="flex-item-grade">9</view>
   </view>
-</view>
-<view>
-  <canvas type="2d" disable-scroll="true" id='coverCanvas' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
-    <view>wdq</view>
-  </canvas>
 </view>

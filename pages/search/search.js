@@ -6,23 +6,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    width: 0,
+    height: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    new Scratch(this, {
-      canvasId: '#coverCanvas',
-      width: 600,
-      height: 300,
-      maskColor:"#dddddd",  //封面颜色
-      //bgImg: "./cover.jpg",  //封面图片
-      overCallBack: () => {
-        console.log('完成刮刮乐')
-      },
-    })
+    var that = this
+    var width = wx.getSystemInfoSync().windowWidth
+    var query = wx.createSelectorQuery()
+    query.select("#id").boundingClientRect(function (res) {
+      var returnHeight = res.height * 750 / width
+      var returnWidth = 710 - (res.right * 750 / width)
+      that.setData({
+        width: returnWidth,
+        height: returnHeight
+      })
+      new Scratch(that, {
+        canvasId: '#coverCanvas',
+        width: returnWidth,
+        height: returnHeight,
+        maskColor: "#dddddd", //封面颜色
+        bgImg: "/img/1111.jpeg", //封面图片
+        overCallBack: () => {
+          console.log('完成刮刮乐')
+        },
+      })
+
+    }).exec()
+
   },
 
   /**
