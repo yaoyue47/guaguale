@@ -1,3 +1,15 @@
 <!--pages/dialog/dialog.wxml-->
-<text>pages/dialog/dialog.wxml</text>
-  
+<view wx:for="{{dialogData}}">
+  <view wx:if="{{item.from}}">
+    <view class="dialogLeft">
+      <view class="triangleLeft"></view>
+      <view class="dialogLeftText">{{item.text}}</view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="dialogRight">
+      <view class="triangleRight"></view>
+      <view class="dialogRightText">{{item.text}}</view>
+    </view>
+  </view>
+</view>

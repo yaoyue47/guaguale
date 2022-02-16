@@ -1,1 +1,50 @@
 /* pages/dialog/dialog.wxss */
+view{
+  font-size: 40rpx
+}
+.dialogLeft {
+  border: black solid 1rpx;
+  
+  margin: 20rpx;
+  padding: 10rpx;
+}
+
+.dialogRight {
+  border: red solid 1rpx;
+  
+  text-align: right;
+  margin: 20rpx;
+  padding: 10rpx;
+}
+
+.dialogLeftText {
+  border-radius: 10rpx;
+  display: inline;
+  border: blue 1rpx solid;
+  padding: 20rpx;
+}
+
+.dialogRightText {
+  border-radius: 10rpx;
+  display: inline;
+  border: blue 1rpx solid;
+  padding: 20rpx;
+}
+
+.triangleLeft {
+  float: left;
+  width: 0;
+  height: 0;
+  border-top: 20rpx solid transparent;
+  border-right: 30rpx solid blue;
+  border-bottom: 20rpx solid transparent;
+}
+
+.triangleRight {
+  float: right;
+  width: 0;
+  height: 0;
+  border-top: 20rpx solid transparent;
+  border-left: 30rpx solid blue;
+  border-bottom: 20rpx solid transparent;
+}

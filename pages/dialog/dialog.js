@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    dialogData: [{ //ture是左边数据，false是右边数据
+        from: true,
+        text: "llllllllllll"
+      },
+      {
+        from: false,
+        text: "rrrrrr"
+      },
+      {
+        from: true,
+        text: "llllllllllll2222222"
+      },
+      {
+        from: true,
+        text: "llllllllllll2222282"
+      }
+    ]
   },
 
   /**
