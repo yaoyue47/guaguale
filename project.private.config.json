@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -13,7 +14,7 @@
       "list": [
         {
           "name": "测试啦",
-          "pathName": "pages/search/search",
+          "pathName": "pages/dialog/dialog",
           "query": "",
           "scene": null,
           "launchMode": "default"

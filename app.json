@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/about/about",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/dialog/dialog"
   ],
   "window": {
     "backgroundTextStyle": "light",
