@@ -15,7 +15,9 @@ Page({
     })
   },
   bindReset: function (e) {
-    console.log(e)
+    wx.navigateTo({
+      url: '../dialog/dialog',
+    })
   },
 
   /**
