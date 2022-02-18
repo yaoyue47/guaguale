@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    index: 0,
     dialogData: [{ //ture是左边数据，false是右边数据
         from: true,
         text: "llllllllllll"
@@ -22,6 +23,18 @@ Page({
         text: "llllllllllll2222282"
       }
     ]
+  },
+  bindtap: function (e) {
+
+    var that = this
+    this.setData({
+      ['dialogData[' + that.data.index + ']']: {
+        from: true,
+        text: "新增新增新增新增新增新增新增新增新增新增新增新增"
+      },
+      index: that.data.index + 1
+    })
+
   },
 
   /**
