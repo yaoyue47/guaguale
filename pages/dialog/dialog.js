@@ -34,6 +34,10 @@ Page({
       },
       index: that.data.index + 1
     })
+    wx.pageScrollTo({
+      selector: "#bottom",
+      duration: 300
+    })
 
   },
 
