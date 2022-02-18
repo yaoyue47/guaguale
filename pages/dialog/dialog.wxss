@@ -1,50 +1,48 @@
 /* pages/dialog/dialog.wxss */
-view{
-  font-size: 40rpx
+page{
+  background-color: #f2f2f2;
 }
 .dialogLeft {
-  border: black solid 1rpx;
-  
-  margin: 20rpx;
+  font-size: 30rpx;
+  display: flex;
+  margin: 10rpx;
   padding: 10rpx;
 }
 
 .dialogRight {
-  border: red solid 1rpx;
-  
-  text-align: right;
-  margin: 20rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction:row-reverse;
+  margin: 10rpx;
   padding: 10rpx;
 }
 
 .dialogLeftText {
+  background-color: white;
   border-radius: 10rpx;
-  display: inline;
-  border: blue 1rpx solid;
   padding: 20rpx;
 }
 
 .dialogRightText {
+  background-color: #07c160;
   border-radius: 10rpx;
-  display: inline;
-  border: blue 1rpx solid;
   padding: 20rpx;
 }
 
 .triangleLeft {
-  float: left;
+  margin-top: 20rpx;
   width: 0;
   height: 0;
   border-top: 20rpx solid transparent;
-  border-right: 30rpx solid blue;
+  border-right: 30rpx solid white;
   border-bottom: 20rpx solid transparent;
 }
 
 .triangleRight {
-  float: right;
+  margin-top: 20rpx;
   width: 0;
   height: 0;
   border-top: 20rpx solid transparent;
-  border-left: 30rpx solid blue;
+  border-left: 30rpx solid #07c160;
   border-bottom: 20rpx solid transparent;
 }

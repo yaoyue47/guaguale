@@ -14,9 +14,7 @@
   </view>
 </view>
 
-<view style="height: 1000rpx;"></view>
-
-<view style="position: fixed;bottom: 0rpx;border: brown 1rpx solid;width: 750rpx;height: 100rpx;display: flex;align-items:center;">
-  <input value="11" placeholder="8888" style="border: blue 1rpx solid;height: 64rpx;margin-left: 18rpx;width: 550rpx;" />
+<view style="position: fixed;bottom: 0rpx;width: 750rpx;height: 100rpx;display: flex;align-items:center;background-color: #f9f9f9;">
+  <input value="11" placeholder="8888" style="height: 64rpx;margin-left: 18rpx;width: 550rpx;background-color: white;" />
   <button type="primary" style="height: 64rpx;width: 150rpx;font-size: 30rpx;" size="mini" bindtap="bindtap">按钮</button>
 </view>
