@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/about/about",
     "pages/search/search",
-    "pages/dialog/dialog"
+    "pages/dialog/dialog",
+    "pages/choose/choose"
   ],
   "window": {
     "backgroundTextStyle": "light",
