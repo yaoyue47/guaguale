@@ -1,2 +1,28 @@
 <!--pages/choose/choose.wxml-->
-<text>pages/choose/choose.wxml</text>
+<view style="margin: 40rpx;padding: 20rpx;background-color: white;height: 90vh;border-radius: 20rpx;">
+  <view style="font-size:20pt;margin: 10rpx;">查询成功</view>
+  <view style="font-size: 12pt;color: gray;margin: 10rpx;margin-bottom: 40rpx;">请选择查看方式</view>
+  <view class="panel">
+    <image src="/img/刮奖.png"></image>
+    <view class="panel_context">
+      <view class="panel_context_title">刮奖式</view>
+      <view class="panel_context_introduce">介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介绍介绍介</view>
+    </view>
+    <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
+  </view>
+  <view class="panel">
+    <image src="/img/询问.png"></image>
+    <view class="panel_context">
+      <view class="panel_context_title">对话式</view>
+      <view class="panel_context_introduce">介绍介绍介绍介绍介绍</view>
+    </view>
+    <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
+  </view>
+  <view class="panel">
+    <image src="/img/更多.png"></image>
+    <view class="panel_context">
+      <view class="panel_context_introduce"> 更多花里胡哨还没想好</view>
+    </view>
+    <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
+  </view>
+</view>

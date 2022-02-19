@@ -1,1 +1,25 @@
 /* pages/choose/choose.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.panel{
+  display: flex;
+  border-top: #f2f2f2 1rpx solid;
+  padding: 20rpx;
+  align-items:center;
+  justify-content: space-between;
+}
+.panel image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.panel_context{
+  width: 350rpx;
+}
+.panel_context_title{
+  font-size: large;
+}
+.panel_context_introduce{
+  font-size: small;
+  color: gray
+}
