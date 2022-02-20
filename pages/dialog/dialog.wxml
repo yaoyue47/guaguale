@@ -16,6 +16,7 @@
 <view style="height: 100rpx;" id="bottom"></view>
 
 <view style="position: fixed;bottom: 0rpx;width: 750rpx;height: 100rpx;display: flex;align-items:center;background-color: #f9f9f9;">
-  <input value="11" placeholder="8888" style="height: 64rpx;margin-left: 18rpx;width: 550rpx;background-color: white;" />
-  <button type="primary" style="height: 64rpx;width: 150rpx;font-size: 30rpx;" size="mini" bindtap="bindtap">按钮</button>
+  <input value="小姚，我的政治在85之上吗" placeholder="你要问哪一门呢？ヽ(✿ﾟ▽ﾟ)ノ" style="height: 64rpx;margin-left: 18rpx;width: 550rpx;background-color: white;"
+  bindinput="bindinput" bindconfirm="bindconfirm" confirm-type="send" />
+  <button type="primary" style="height: 64rpx;width: 150rpx;font-size: 30rpx;" size="mini" bindtap="bindtap">发送</button>
 </view>

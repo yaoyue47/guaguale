@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    message: "小姚，我的政治在85之上吗",
     index: 0,
     dialogData: [{ //ture是左边数据，false是右边数据
         from: true,
@@ -24,13 +25,12 @@ Page({
       }
     ]
   },
-  bindtap: function (e) {
-
+  sendMessage: function (leftOrRight, message) {
     var that = this
     this.setData({
       ['dialogData[' + that.data.index + ']']: {
-        from: true,
-        text: "新增新增新增新增新增新增新增新增新增新增新增新增"
+        from: leftOrRight,
+        text: message
       },
       index: that.data.index + 1
     })
@@ -38,7 +38,19 @@ Page({
       selector: "#bottom",
       duration: 300
     })
-
+  },
+  bindtap: function () {
+    if (this.data.message != "") {
+      this.sendMessage(false, this.data.message)
+    }
+  },
+  bindinput: function (e) {
+    this.setData({
+      message: e.detail.value
+    })
+  },
+  bindconfirm: function (e) {
+    this.sendMessage(false, e.detail.value)
   },
 
   /**
