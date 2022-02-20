@@ -7,41 +7,44 @@ Page({
   data: {
     message: "小姚，我的政治在85之上吗",
     index: 0,
-    dialogData: [{ //ture是左边数据，false是右边数据
-        from: true,
-        text: "llllllllllll"
-      },
-      {
-        from: false,
-        text: "rrrrrr"
-      },
-      {
-        from: true,
-        text: "llllllllllll2222222"
-      },
-      {
-        from: true,
-        text: "llllllllllll2222282"
-      }
-    ]
+    dialogData: [] //ture是左边数据，false是右边数据 
+    //{ from: false, text: "rrrrrr"}
   },
   sendMessage: function (leftOrRight, message) {
-    var that = this
     this.setData({
-      ['dialogData[' + that.data.index + ']']: {
+      ['dialogData[' + this.data.index + ']']: {
         from: leftOrRight,
         text: message
       },
-      index: that.data.index + 1
+      index: this.data.index + 1
     })
     wx.pageScrollTo({
       selector: "#bottom",
       duration: 300
     })
   },
+  tellMeHowToReturn: function (message) {
+    return message //todo
+  },
+  returnMessage: function (message) {
+    var that = this
+    var returnData = this.tellMeHowToReturn(message)
+    setTimeout(function () {
+      that.sendMessage(true, "思考中...")
+      that.setData({
+        index: that.data.index - 1
+      })
+    }, 500)
+
+    setTimeout(function () {
+      that.sendMessage(true, returnData)
+    }, 1500)
+  },
+
   bindtap: function () {
     if (this.data.message != "") {
       this.sendMessage(false, this.data.message)
+      this.returnMessage(this.data.message)
     }
   },
   bindinput: function (e) {
@@ -51,6 +54,7 @@ Page({
   },
   bindconfirm: function (e) {
     this.sendMessage(false, e.detail.value)
+    this.returnMessage(e.detail.value)
   },
 
   /**
@@ -64,7 +68,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var that = this
+    setTimeout(function () {
+      that.sendMessage(true, "欢迎呀，某某同学")
+    }, 1000)
+    setTimeout(function () {
+      that.sendMessage(true, "我是你的智能语音助手，我已经知道了你的成绩了哦，试着对我说：“小姚，我的政治在85之上吗”")
+    }, 2000)
   },
 
   /**
