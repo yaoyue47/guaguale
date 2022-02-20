@@ -3,7 +3,7 @@
   <view style="font-size:20pt;margin: 10rpx;">查询成功!</view>
   <view style="font-size: 12pt;color: gray;margin: 10rpx;margin-bottom: 70rpx;">请选择查看方式</view>
   <view class="panel" bindtap="navigate" data-url="/pages/search/search">
-    <image src="/img/刮奖.png"></image>
+    <image src="/img/guajiang.png"></image>
     <view class="panel_context">
       <view class="panel_context_title">刮奖式</view>
       <view class="panel_context_introduce">介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介绍介绍介</view>
@@ -11,7 +11,7 @@
     <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
   </view>
   <view class="panel" bindtap="navigate" data-url="/pages/dialog/dialog">
-    <image src="/img/询问.png"></image>
+    <image src="/img/xunwen.png"></image>
     <view class="panel_context">
       <view class="panel_context_title">对话式</view>
       <view class="panel_context_introduce">介绍介绍介绍介绍介绍</view>
@@ -19,7 +19,7 @@
     <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
   </view>
   <view class="panel" style="border-bottom:1rpx solid #f2f2f2;">
-    <image src="/img/更多.png"></image>
+    <image src="/img/gengduo.png"></image>
     <view class="panel_context">
       <view class="panel_context_introduce" style="color: #bfbfbf;"> 更多花里胡哨还没想好</view>
     </view>
