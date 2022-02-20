@@ -1,7 +1,7 @@
 // pages/about/about.js
 Page({
   data: {
-    array: ['考研', '四六级'],
+    array: ["请选择考试类型",'考研', '四六级(还没做呢)'],
     index: 0
   },
   bindPickerChange: function (e) {

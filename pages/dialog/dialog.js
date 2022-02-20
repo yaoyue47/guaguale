@@ -73,7 +73,7 @@ Page({
       that.sendMessage(true, "欢迎呀，某某同学")
     }, 1000)
     setTimeout(function () {
-      that.sendMessage(true, "我是你的智能语音助手，我已经知道了你的成绩了哦，试着对我说：“小姚，我的政治在85之上吗”")
+      that.sendMessage(true, "我是你的智能语音助手小姚，我已经知道了你的成绩了哦，试着对我说：“小姚，我的政治在85之上吗”，“小姚，我的数学在100以下吗”")
     }, 2000)
   },
 

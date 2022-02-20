@@ -6,7 +6,7 @@
     <image src="/img/guajiang.png"></image>
     <view class="panel_context">
       <view class="panel_context_title">刮奖式</view>
-      <view class="panel_context_introduce">介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介绍介绍介介绍介绍介绍介绍介绍介绍介绍介</view>
+      <view class="panel_context_introduce">采用刮刮乐的方式刮出成绩，建议一点一点抠哦。</view>
     </view>
     <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
   </view>
@@ -14,7 +14,7 @@
     <image src="/img/xunwen.png"></image>
     <view class="panel_context">
       <view class="panel_context_title">对话式</view>
-      <view class="panel_context_introduce">介绍介绍介绍介绍介绍</view>
+      <view class="panel_context_introduce">灵感来自于朋友之间的成绩代查，询问分数与猜想的高低，慢慢逼近真实分数。</view>
     </view>
     <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
   </view>

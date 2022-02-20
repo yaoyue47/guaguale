@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<mp-form-page title="成绩查询系统" subtitle="请输入你的姓名和准考证号">
+<mp-form-page title="查成绩，不紧张！" subtitle="请输入你的姓名和准考证号">
     <mp-cells title="填写">
         <mp-cell title="考生姓名">
             <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入你的姓名" />
@@ -20,5 +20,5 @@
         <button class="weui-btn" type="primary" bindtap="bindSure">确定</button>
         <button class="weui-btn" type="default" bindtap="bindReset">重置</button>
     </view>
-    <view slot="footer">wdad</view>
+    <view slot="footer">Copyright © 姚老师 All rights reserved.</view>
 </mp-form-page>
