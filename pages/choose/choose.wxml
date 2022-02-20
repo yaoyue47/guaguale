@@ -2,7 +2,7 @@
 <view style="margin: 40rpx;padding: 20rpx;background-color: white;height: 90vh;border-radius: 20rpx;">
   <view style="font-size:20pt;margin: 10rpx;">查询成功!</view>
   <view style="font-size: 12pt;color: gray;margin: 10rpx;margin-bottom: 70rpx;">请选择查看方式</view>
-  <view class="panel">
+  <view class="panel" bindtap="navigate" data-url="/pages/search/search">
     <image src="/img/刮奖.png"></image>
     <view class="panel_context">
       <view class="panel_context_title">刮奖式</view>
@@ -10,7 +10,7 @@
     </view>
     <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
   </view>
-  <view class="panel">
+  <view class="panel" bindtap="navigate" data-url="/pages/dialog/dialog">
     <image src="/img/询问.png"></image>
     <view class="panel_context">
       <view class="panel_context_title">对话式</view>

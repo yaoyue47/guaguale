@@ -11,15 +11,7 @@
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
-          "name": "测试啦",
-          "pathName": "pages/choose/choose",
-          "query": "",
-          "scene": null,
-          "launchMode": "default"
-        }
-      ]
+      "list": []
     }
   }
 }

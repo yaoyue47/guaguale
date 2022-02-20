@@ -11,15 +11,11 @@ Page({
   },
   bindSure: function (e) {
     wx.navigateTo({
-      url: '../search/search',
+      url: '/pages/choose/choose',
     })
   },
   bindReset: function (e) {
-    wx.navigateTo({
-      url: '../dialog/dialog',
-    })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
