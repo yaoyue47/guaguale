@@ -1,7 +1,7 @@
 <!--pages/choose/choose.wxml-->
 <view style="margin: 40rpx;padding: 20rpx;background-color: white;height: 90vh;border-radius: 20rpx;">
-  <view style="font-size:20pt;margin: 10rpx;">查询成功</view>
-  <view style="font-size: 12pt;color: gray;margin: 10rpx;margin-bottom: 40rpx;">请选择查看方式</view>
+  <view style="font-size:20pt;margin: 10rpx;">查询成功!</view>
+  <view style="font-size: 12pt;color: gray;margin: 10rpx;margin-bottom: 70rpx;">请选择查看方式</view>
   <view class="panel">
     <image src="/img/刮奖.png"></image>
     <view class="panel_context">
@@ -18,11 +18,11 @@
     </view>
     <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
   </view>
-  <view class="panel">
+  <view class="panel" style="border-bottom:1rpx solid #f2f2f2;">
     <image src="/img/更多.png"></image>
     <view class="panel_context">
-      <view class="panel_context_introduce"> 更多花里胡哨还没想好</view>
+      <view class="panel_context_introduce" style="color: #bfbfbf;"> 更多花里胡哨还没想好</view>
     </view>
-    <mp-icon icon="arrow" size="15" color="gray"></mp-icon>
+    <mp-icon icon="arrow" size="15" color="#f0f0f0"></mp-icon>
   </view>
 </view>
