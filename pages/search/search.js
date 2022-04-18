@@ -29,9 +29,11 @@ Page({
         width: returnWidth,
         height: returnHeight,
         maskColor: "#dddddd", //封面颜色
-        bgImg: "/img/1111.jpeg", //封面图片
         overCallBack: () => {
           console.log('完成刮刮乐')
+          wx.vibrateShort({
+            style: 'heavy',
+          })
         },
       })
 
