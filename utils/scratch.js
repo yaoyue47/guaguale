@@ -5,10 +5,9 @@ class Scratch {
     this.canvasId = opts.canvasId || 'canvas';
     this.width = opts.width || 300;
     this.height = opts.height || 300;
-    this.bgImg = opts.bgImg || ''; //覆盖的图片
     this.maskColor = opts.maskColor || '#dddddd';
     this.size = opts.size || 15,
-    this.r = this.size * 2;
+      this.r = this.size * 2;
     this.area = this.r * this.r;
     this.showPercent = opts.showPercent || 0.2; //刮开多少比例显示全部
     this.rpx = wx.getSystemInfoSync().windowWidth / 750; //设备缩放比例
@@ -16,6 +15,7 @@ class Scratch {
     this.totalArea = this.width * this.height;
     this.startCallBack = opts.startCallBack || false; //第一次刮时触发刮奖效果
     this.overCallBack = opts.overCallBack || false; //刮奖完触发
+    this.magicString = opts.magicString //魔法字符串，解决重复new对象时 touchStart、Move、End时函数被覆盖问题
     this.init();
   }
   init() {
@@ -40,28 +40,64 @@ class Scratch {
   }
   drawMask() {
     let self = this;
-    if (self.bgImg) {
-      let imgObj = self.canvas.createImage();
-      imgObj.src = self.bgImg; //res.path是网络图片的本地地址
-      imgObj.onload = function (res) {
-        self.ctx.drawImage(imgObj, 0, 0, self.width * self.rpx, self.height * self.rpx);
-      }
-    } else {
-      this.ctx.fillStyle = this.maskColor;
-      this.ctx.fillRect(0, 0, self.width * self.rpx, self.height * self.rpx);
-    }
+    this.ctx.fillStyle = this.maskColor;
+    this.ctx.fillRect(0, 0, self.width * self.rpx, self.height * self.rpx);
   }
-  bindTouch() {
-    this.page.touchStart = (e) => {
-      this.eraser(e, true);
+  bindTouch() { //magicString判断 
+    if (this.magicString == "view1") {
+      this.page.touchStart1 = (e) => {
+        this.eraser(e, true);
+      }
+      this.page.touchMove1 = (e) => {
+        this.eraser(e, false);
+      }
+      this.page.touchEnd1 = (e) => {
+        if (this.show) {
+          if (this.overCallBack) this.overCallBack();
+          this.ctx.clearRect(0, 0, this.width * this.rpx, this.height * this.rpx);
+        }
+      }
     }
-    this.page.touchMove = (e) => {
-      this.eraser(e, false);
+    if (this.magicString == "view2") {
+      this.page.touchStart2 = (e) => {
+        this.eraser(e, true);
+      }
+      this.page.touchMove2 = (e) => {
+        this.eraser(e, false);
+      }
+      this.page.touchEnd2 = (e) => {
+        if (this.show) {
+          if (this.overCallBack) this.overCallBack();
+          this.ctx.clearRect(0, 0, this.width * this.rpx, this.height * this.rpx);
+        }
+      }
     }
-    this.page.touchEnd = (e) => {
-      if (this.show) {
-        if (this.overCallBack) this.overCallBack();
-        this.ctx.clearRect(0, 0, this.width * this.rpx, this.height * this.rpx);
+    if (this.magicString == "view3") {
+      this.page.touchStart3 = (e) => {
+        this.eraser(e, true);
+      }
+      this.page.touchMove3 = (e) => {
+        this.eraser(e, false);
+      }
+      this.page.touchEnd3 = (e) => {
+        if (this.show) {
+          if (this.overCallBack) this.overCallBack();
+          this.ctx.clearRect(0, 0, this.width * this.rpx, this.height * this.rpx);
+        }
+      }
+    }
+    if (this.magicString == "view4") {
+      this.page.touchStart4 = (e) => {
+        this.eraser(e, true);
+      }
+      this.page.touchMove4 = (e) => {
+        this.eraser(e, false);
+      }
+      this.page.touchEnd4 = (e) => {
+        if (this.show) {
+          if (this.overCallBack) this.overCallBack();
+          this.ctx.clearRect(0, 0, this.width * this.rpx, this.height * this.rpx);
+        }
       }
     }
   }
