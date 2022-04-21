@@ -1,10 +1,11 @@
 /* pages/choose/choose.wxss */
 page{
-  background-color: #f2f2f2;
+  background-image: url('https://s1.ax1x.com/2022/04/21/L6zZ7Q.jpg');
+  background-size: 100% 100%;
 }
 .panel{
   display: flex;
-  border-top: #f2f2f2 1rpx solid;
+  border-top: #e4e4e4 1rpx solid;
   padding: 20rpx;
   align-items:center;
   justify-content: space-between;

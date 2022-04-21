@@ -1,5 +1,5 @@
 <!--pages/choose/choose.wxml-->
-<view style="margin: 40rpx;padding: 20rpx;background-color: white;height: 90vh;border-radius: 20rpx;">
+<view style="margin: 40rpx;padding: 20rpx;height: 90vh;border-radius: 20rpx;background: rgba(255, 255, 255, 0.8);backdrop-filter: blur(10rpx);">
   <view style="font-size:20pt;margin: 10rpx;">查询成功!</view>
   <view style="font-size: 12pt;color: gray;margin: 10rpx;margin-bottom: 70rpx;">请选择查看方式</view>
   <view class="panel" bindtap="navigate" data-url="/pages/search/search">
