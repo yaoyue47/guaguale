@@ -1,24 +1,26 @@
 <!--index.wxml-->
-<mp-form-page title="查成绩，不紧张！" subtitle="请输入你的姓名和准考证号">
+<form bindsubmit="formSubmit">
+  <mp-form-page title="查成绩，不紧张！" subtitle="请输入你的姓名和准考证号">
     <mp-cells title="填写">
-        <mp-cell title="考生姓名">
-            <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入你的姓名" />
-        </mp-cell>
-        <mp-cell title="准考证号">
-            <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入你的准考证号" />
-        </mp-cell>
+      <mp-cell title="考生姓名">
+        <input name="username" class="weui-input" placeholder="请输入你的姓名" />
+      </mp-cell>
+      <mp-cell title="准考证号">
+        <input name="password" class="weui-input" placeholder="请输入你的准考证号" />
+      </mp-cell>
     </mp-cells>
     <mp-cells title="选择">
-        <mp-cell>
-            <view slot="title">考试类型</view>
-            <picker range="{{array}}" value="{{index}}" bindchange="bindPickerChange">
-                <view>{{array[index]}}</view>
-            </picker>
-        </mp-cell>
+      <mp-cell>
+        <view slot="title">考试类型</view>
+        <picker range="{{array}}" value="{{index}}" bindchange="bindPickerChange" name="choose">
+          <view>{{array[index]}}</view>
+        </picker>
+      </mp-cell>
     </mp-cells>
     <view slot="button">
-        <button class="weui-btn" type="primary" bindtap="bindSure">确定</button>
-        <button class="weui-btn" type="default" bindtap="bindReset">重置</button>
+      <button class="weui-btn" type="primary" formType="submit">确定</button>
+      <button class="weui-btn" type="default" formType="reset">重置</button>
     </view>
     <view slot="footer">Copyright © 姚老师 All rights reserved.</view>
-</mp-form-page>
+  </mp-form-page>
+</form>

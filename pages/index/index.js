@@ -1,7 +1,7 @@
 // pages/about/about.js
 Page({
   data: {
-    array: ["请选择考试类型",'考研', '四六级(还没做呢)'],
+    array: ['考研', '四六级(还没做呢)'],
     index: 0
   },
   bindPickerChange: function (e) {
@@ -9,12 +9,8 @@ Page({
       index: e.detail.value
     })
   },
-  bindSure: function (e) {
-    wx.navigateTo({
-      url: '/pages/choose/choose',
-    })
-  },
-  bindReset: function (e) {
+  formSubmit:function(e){
+    console.log(e)
   },
   /**
    * 生命周期函数--监听页面加载
