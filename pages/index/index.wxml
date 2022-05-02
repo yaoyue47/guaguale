@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<view style="margin:40rpx;padding: 20rpx;border-radius: 20rpx;background: rgba(255, 255, 255, 0.8);backdrop-filter: blur(10rpx);">
 <form bindsubmit="formSubmit">
   <mp-form-page title="查成绩，不紧张！" subtitle="请输入你的姓名和准考证号">
     <mp-cells title="填写">
@@ -24,3 +25,4 @@
     <view slot="footer">Copyright © 姚老师 All rights reserved.</view>
   </mp-form-page>
 </form>
+</view>
