@@ -2,15 +2,33 @@
 Page({
   data: {
     array: ['考研', '四六级(还没做呢)'],
-    index: 0
+    index: 0, //picker需要的数据
+    show: false,
+    buttons: [
+      {
+        type: 'primary',
+        text: '晓得了',
+      }
+    ]//half-screen-dialog需要的数据
   },
   bindPickerChange: function (e) {
     this.setData({
       index: e.detail.value
     })
   },
-  formSubmit:function(e){
-    console.log(e)
+  formSubmit: function (e) {
+    console.log(e.detail.value)
+    if (e.detail.value.username == "" | e.detail.value.password == "") {
+      wx.showModal({
+        title: '错误',
+        content: '输入不可为空，傻逼',
+        showCancel: false,
+      })
+    } else {
+      this.setData({
+        show: true
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

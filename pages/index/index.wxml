@@ -26,3 +26,5 @@
   </mp-form-page>
 </form>
 </view>
+
+<mp-half-screen-dialog show="{{show}}" title="查成绩前的提示" subTitle="《免责声明》" desc="wwwwwawfawfwafwafw" tips="4794wafwafwafwafdafw6" buttons="{{buttons}}"></mp-half-screen-dialog>
