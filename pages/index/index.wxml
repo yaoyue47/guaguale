@@ -35,4 +35,4 @@
 </form>
 </view>
 
-<mp-half-screen-dialog show="{{show}}" title="查成绩前的提示" subTitle="《免责声明》" desc="因为本开发者穷的叮当响，所以应用服务器性能够呛。查询结果需要大概几秒到十几秒的时间，请耐心等待。" buttons="{{buttons}}"></mp-half-screen-dialog>
+<mp-half-screen-dialog show="{{show}}" title="查成绩前的提示" subTitle="《免责声明》" desc="因为本开发者穷的叮当响，所以应用服务器性能够呛。查询结果需要大概几秒到十几秒的时间，请耐心等待。" buttons="{{buttons}}" bindbuttontap="buttontap"></mp-half-screen-dialog>
