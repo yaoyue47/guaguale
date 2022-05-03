@@ -2,6 +2,9 @@
 <view style="margin:40rpx;padding: 20rpx;border-radius: 20rpx;background: rgba(255, 255, 255, 0.8);backdrop-filter: blur(10rpx);">
 <form bindsubmit="formSubmit">
   <mp-form-page title="查成绩，不紧张！" subtitle="请输入你的姓名和准考证号">
+    <view style="display: flex;justify-content: center;margin-bottom: 80rpx;">
+      <image src="/img/logo.png" style="height: 200rpx;width: 200rpx;"></image>
+    </view>
     <mp-cells title="填写">
       <mp-cell title="考生姓名">
         <input name="username" class="weui-input" placeholder="请输入你的姓名" />
@@ -18,6 +21,11 @@
         </picker>
       </mp-cell>
     </mp-cells>
+    <view style="display: flex;flex-direction: column;color: red;margin-left: 30px;font-size: xx-small;">
+      <text>\n</text>
+      <text>自己成绩不敢查？试试体验账号吧</text>
+      <text>用户名：ABC；密码：123456</text>
+    </view>
     <view slot="button">
       <button class="weui-btn" type="primary" formType="submit">确定</button>
       <button class="weui-btn" type="default" formType="reset">重置</button>
@@ -27,4 +35,4 @@
 </form>
 </view>
 
-<mp-half-screen-dialog show="{{show}}" title="查成绩前的提示" subTitle="《免责声明》" desc="wwwwwawfawfwafwafw" tips="4794wafwafwafwafdafw6" buttons="{{buttons}}"></mp-half-screen-dialog>
+<mp-half-screen-dialog show="{{show}}" title="查成绩前的提示" subTitle="《免责声明》" desc="因为本开发者穷的叮当响，所以应用服务器性能够呛。查询结果需要大概几秒到十几秒的时间，请耐心等待。" buttons="{{buttons}}"></mp-half-screen-dialog>
