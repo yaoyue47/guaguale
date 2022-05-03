@@ -4,12 +4,12 @@ Page({
     array: ['考研', '四六级(还没做呢)'],
     index: 0, //picker需要的数据
     show: false,
-    buttons: [
-      {
-        type: 'primary',
-        text: '晓得了',
-      }
-    ]//half-screen-dialog需要的数据
+    buttons: [{
+      type: 'primary',
+      text: '晓得了',
+    }], //half-screen-dialog需要的数据
+    username: "",
+    password: ""
   },
   bindPickerChange: function (e) {
     this.setData({
@@ -17,7 +17,6 @@ Page({
     })
   },
   formSubmit: function (e) {
-    console.log(e.detail.value)
     if (e.detail.value.username == "" | e.detail.value.password == "") {
       wx.showModal({
         title: '错误',
@@ -26,14 +25,38 @@ Page({
       })
     } else {
       this.setData({
-        show: true
+        username: e.detail.value.username,
+        password: e.detail.value.password,
+        show: true //弹出half-screen-dialog
       })
     }
   },
-  buttontap:function(){
+  buttontap: function () {
     this.setData({
-      show: false
+      show: false ////关闭half-screen-dialog
     })
+    wx.showLoading({
+      title: '查询中',
+      mask: true
+    })
+    if (this.data.username == "abc" && this.data.password == "123456") {
+      setTimeout(function () {
+        wx.hideLoading()
+        wx.navigateTo({
+          url: '/pages/choose/choose',
+        })
+      }, 2000)
+    } else {
+      setTimeout(function () {
+        wx.hideLoading()
+        wx.showModal({
+          title: '错误',
+          content: '账户或者密码输错啦',
+          showCancel: false,
+        })
+      }, 2000)
+    }
+
   },
   /**
    * 生命周期函数--监听页面加载
