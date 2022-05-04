@@ -1,16 +1,16 @@
 <!--index.wxml-->
 <view style="margin:40rpx;padding: 20rpx;border-radius: 20rpx;background: rgba(255, 255, 255, 0.8);backdrop-filter: blur(10rpx);">
 <form bindsubmit="formSubmit">
-  <mp-form-page title="查成绩，不紧张！" subtitle="请输入你的姓名和准考证号">
+  <mp-form-page title="查成绩，不紧张！" subtitle="请输入你的账号和密码">
     <view style="display: flex;justify-content: center;margin-bottom: 80rpx;">
       <image src="/img/logo.png" style="height: 200rpx;width: 200rpx;"></image>
     </view>
     <mp-cells title="填写">
-      <mp-cell title="考生姓名">
-        <input name="username" class="weui-input" placeholder="请输入你的姓名" />
+      <mp-cell title="考生账号">
+        <input name="username" class="weui-input" placeholder="请输入你的账号名" />
       </mp-cell>
-      <mp-cell title="准考证号">
-        <input name="password" class="weui-input" placeholder="请输入你的准考证号" />
+      <mp-cell title="考生密码">
+        <input name="password" password="true" class="weui-input" placeholder="请输入你的密码" />
       </mp-cell>
     </mp-cells>
     <mp-cells title="选择">
