@@ -8,35 +8,55 @@ Page({
   data: {
     width: 0,
     height: 0,
+
+    name:"张三儿er",
+    enroll:"214578963",
+    admission_number:"171524036986520",
+
     receiveData: {
-      name: "aaa",
-      enroll: "1617616",
-      admissionNumber: "179489852325",
       grade: [{
         canvasId: "view1canvas",
         viewId: "view1",
-        subject: "zz",
-        grade: "450",
         touchStart: "touchStart1",
         touchMove: "touchMove1",
-        touchEnd: "touchEnd1"
+        touchEnd: "touchEnd1",
+        subject: "政治",
+        grade: ["*","*","*"],
       }, {
         canvasId: "view2canvas",
         viewId: "view2",
-        subject: "zz",
-        grade: "450",
         touchStart: "touchStart2",
         touchMove: "touchMove2",
-        touchEnd: "touchEnd2"
+        touchEnd: "touchEnd2",
+        subject: "英语",
+        grade: ["*","*","*"],
       },
       {
         canvasId: "view3canvas",
         viewId: "view3",
-        subject: "zz",
-        grade: "450",
         touchStart: "touchStart3",
         touchMove: "touchMove3",
-        touchEnd: "touchEnd3"
+        touchEnd: "touchEnd3",
+        subject: "专一",
+        grade: ["*","*","*"],
+      },
+      {
+        canvasId: "view4canvas",
+        viewId: "view4",
+        touchStart: "touchStart4",
+        touchMove: "touchMove4",
+        touchEnd: "touchEnd4",
+        subject: "专二",
+        grade: ["*","*","*"],
+      },
+      {
+        canvasId: "view5canvas",
+        viewId: "view5",
+        touchStart: "touchStart5",
+        touchMove: "touchMove5",
+        touchEnd: "touchEnd5",
+        subject: "总分",
+        grade: ["*","*","*"],
       },
     ]
     }
@@ -78,7 +98,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.setData({
+      "receiveData.grade[0].grade":["0","6","6"],
+      "receiveData.grade[1].grade":["0","7","0"],
+      "receiveData.grade[2].grade":["0","9","8"],
+      "receiveData.grade[3].grade":["1","0","9"],
+      "receiveData.grade[4].grade":["3","4","3"],
+    })
   },
 
   /**

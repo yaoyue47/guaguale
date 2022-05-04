@@ -2,13 +2,13 @@
 <view style="background-color: #f2f2f2;padding-top: 20rpx;">
 
   <view style="margin: 40rpx;margin-bottom: 0rpx;font-size: x-large;">
-    考生：某某
+    考生：{{name}}
   </view>
   <view style="margin: 40rpx;margin-top: 0rpx;margin-bottom: 0rpx;font-size: large;">
-    报名号：111111
+    报名号：{{enroll}}
   </view>
   <view style="margin: 40rpx;margin-top: 0rpx;font-size: large;">
-    准考证号：55555555555555
+    准考证号：{{admission_number}}
   </view>
   <view style="margin: 40rpx;margin-bottom: 40rpx;">
     您本次考试成绩为：
@@ -16,9 +16,9 @@
   <view wx:for="{{receiveData.grade}}" class="flex-wrp">
     <canvas type="2d" disable-scroll="true" id="{{item.canvasId}}" bindtouchstart="{{item.touchStart}}" bindtouchmove="{{item.touchMove}}" bindtouchend="{{item.touchEnd}}" style="right: 40rpx; position: absolute; z-index: 999;width: {{width}}rpx;height: {{height}}rpx;">
     </canvas>
-    <view class="flex-item" id="{{item.viewId}}">政治 :</view>
-    <view class="flex-item-grade">*</view>
-    <view class="flex-item-grade">*</view>
-    <view class="flex-item-grade">*</view>
+    <view class="flex-item" id="{{item.viewId}}">{{item.subject}} :</view>
+    <view class="flex-item-grade">{{item.grade[0]}}</view>
+    <view class="flex-item-grade">{{item.grade[1]}}</view>
+    <view class="flex-item-grade">{{item.grade[2]}}</view>
   </view>
 </view>

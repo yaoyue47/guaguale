@@ -9,7 +9,7 @@ class Scratch {
     this.size = opts.size || 15,
       this.r = this.size * 2;
     this.area = this.r * this.r;
-    this.showPercent = opts.showPercent || 0.2; //刮开多少比例显示全部
+    this.showPercent = opts.showPercent || 0.6; //刮开多少比例显示全部
     this.rpx = wx.getSystemInfoSync().windowWidth / 750; //设备缩放比例
     this.scale = opts.scale || 0.7;
     this.totalArea = this.width * this.height;
@@ -94,6 +94,20 @@ class Scratch {
         this.eraser(e, false);
       }
       this.page.touchEnd4 = (e) => {
+        if (this.show) {
+          if (this.overCallBack) this.overCallBack();
+          this.ctx.clearRect(0, 0, this.width * this.rpx, this.height * this.rpx);
+        }
+      }
+    }
+    if (this.magicString == "view5") {
+      this.page.touchStart5 = (e) => {
+        this.eraser(e, true);
+      }
+      this.page.touchMove5 = (e) => {
+        this.eraser(e, false);
+      }
+      this.page.touchEnd5 = (e) => {
         if (this.show) {
           if (this.overCallBack) this.overCallBack();
           this.ctx.clearRect(0, 0, this.width * this.rpx, this.height * this.rpx);
